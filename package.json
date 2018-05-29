@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "This will load any static html site",
   "scripts": {
-    "start": "harp server --port $PORT"
+            "start": "NODE_ENV=production node build/server.js",
+        "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "harp": "*"

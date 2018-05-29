@@ -4,6 +4,7 @@
   "description": "This will load any static html site",
   "scripts": {
     "start": "harp server --port $PORT"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "harp": "*"
